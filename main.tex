@@ -1,13 +1,24 @@
-\documentclass[UKenglish, aspectratio = 169]{beamer}
+\documentclass[aspectratio = 169]{beamer}
 
+\usepackage{fontspec}
+\usepackage[slantfont, boldfont]{xeCJK}
 
-\usetheme{OsloMet}
-\usepackage{style}
+% set up English font
+\setmainfont{Courier}
+\setsansfont{Courier-Oblique}
+\setmonofont{Courier}
 
-\author[Hansen \& Helsø]
-{Nikolai Bjørnestøl Hansen \texorpdfstring{\\}{} Martin Helsø}
-\title{Beamer example}
-\subtitle{Usage of the theme \texttt{OsloMet}}
+% set up Chinese font, the font must be valid on your system
+\setCJKmainfont[BoldFont=STSongti-SC-Black, ItalicFont=STSongti-SC-Light]{STSongti-SC-Regular}
+\setCJKsansfont{STXihei}
+\setCJKmonofont{STFangsong}
+
+\usetheme{QuantaEye}
+\usepackage{QuantaEyeStyle}
+
+\author[LY]{卡卡罗特}
+\title{述职报告}
+\subtitle{工作汇报}
 
 
 \begin{document}
@@ -50,7 +61,7 @@
 \end{frame}
 
 %% Enable the logo in the lower right corner:
-\showlogo
+%% \showlogo
 
 \subsection{Example}
 

@@ -1,10 +1,8 @@
-% Theme for OsloMet – Oslo Metropolitan University
+% Theme for QuantaEye
 %
-% Implemented by:
-% Nikolai Bjørnestøl Hansen (nikobjo@oslomet.no)
-% Martin Helsø (martibhe@math.uio.no)
+% Implemented by: LY
 %
-% Version 30-06-2020
+% Version 2021-01-26
 
 
 \RequirePackage{calc}
@@ -62,30 +60,30 @@
             \hspace{0.9cm}
             \parbox[t][2cm][b]{\textwidth}
             {
-                \includegraphics[height = 1cm]{OM-images/OM-logo.pdf}
+                \includegraphics[height = 1cm]{images/logo.png}
             }
         }
 
-        \AtPageLowerLeft
-        {
-            \hspace{0.9cm}
-            \parbox[b][0.12\paperheight][t]{\textwidth}
-            {
-                \includegraphics[height = 0.05\paperheight]
-                {OM-images/OM-signature.pdf}
-            }
-        }
-        \AtPageUpperLeft
-        {
-            \makebox[\paperwidth][r]
-            {
-                \parbox[t][\paperheight][b]{4cm}
-                {%
-                    \includegraphics[height = \paperheight]
-                    {OM-images/OM-pipe.jpg}
-                }%
-            }
-        }
+        %% \AtPageLowerLeft
+        %% {
+        %%     \hspace{0.9cm}
+        %%     \parbox[b][0.12\paperheight][t]{\textwidth}
+        %%     {
+        %%         \includegraphics[height = 0.05\paperheight]
+        %%         {OM-images/OM-signature.pdf}
+        %%     }
+        %% }
+        %% \AtPageUpperLeft
+        %% {
+        %%     \makebox[\paperwidth][r]
+        %%     {
+        %%         \parbox[t][\paperheight][b]{4cm}
+        %%         {%
+        %%             \includegraphics[height = \paperheight]
+        %%             {OM-images/OM-pipe.jpg}
+        %%         }%
+        %%     }
+        %% }
         \AtPageLowerLeft
         {
             \makebox[\paperwidth][r]
@@ -95,7 +93,7 @@
                     \centering
                     \usebeamercolor[fg]{local structure}
                     \resizebox{2cm}{!}
-                    {\OMphoto{}: Ronny Østnes / OsloMet}
+                    {\OMphoto{}: Ronny Østnes / QuantaEye}
                 }
             }
         }
@@ -107,7 +105,8 @@
         \raggedright
 
         \vspace{\stretch{0.5}}
-
+        {\center
+        {\color{white}
         \usebeamerfont{title}
         \inserttitle
         \\[0.2ex]
@@ -119,6 +118,10 @@
         \usebeamerfont{author}
         \insertauthor
 
+        \vspace{2mm}
+        \centerline{\insertdate}
+
+        }}
         \vspace{0.135\paperheight}
     \end{minipage}
 }
@@ -126,6 +129,7 @@
 \newcommand{\TitlePage}
 {{
     \setbeamercolor{background canvas}{parent = title page}
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/titlePage.png}}
     \begin{frame}[b, plain, noframenumbering]
         \titlepage
     \end{frame}

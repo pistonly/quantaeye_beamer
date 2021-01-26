@@ -1,9 +1,9 @@
-# OsloMet
-Beamer theme for OsloMet - Oslo Metropolitan University
+# QuantaEye
+Beamer theme for QuantaEye 
 
 Available on [Overleaf](https://www.overleaf.com/latex/templates/oslomet-beamer-theme/wknwhwkrzvgk).
 
-[![Link to example PDF](https://i.imgur.com/iPYKV66.png)](https://github.com/martinhelso/OsloMet/releases/download/v1.2/main.pdf)
+[![Link to example PDF](https://i.imgur.com/iPYKV66.png)](https://github.com/martinhelso/QuantaEye/releases/download/v1.2/main.pdf)
 
 ## Logo
 The logo in the lower right corner can be removed from a specific `frame` using the macro `\hidelogo` outside of the `frame` like this:
@@ -25,7 +25,7 @@ The command `\enumref` inserts a reference to an enumerated item in the shape of
 ## Options
 Options are given as
 ```LaTeX
-\usetheme[option]{OsloMet}
+\usetheme[option]{QuantaEye}
 ```
 
 ### Widescreen
@@ -68,7 +68,7 @@ The following environments are predefined by `beamer`:
 * `lemma`
 * `theorem`
 
-In addition, `OsloMet` defines these environments:
+In addition, `QuantaEye` defines these environments:
 * `assumption`
 * `axiom`
 * `calculation`
@@ -84,7 +84,7 @@ In addition, `OsloMet` defines these environments:
 * `remarks`
 
 ## Dependencies
-`OsloMet` imports the following packages:
+`QuantaEye` imports the following packages:
 * `babel`
 * `beamerposter`
 * `beramono`
@@ -97,6 +97,6 @@ In addition, `OsloMet` defines these environments:
 
 ## Credit
 
-Cover photo: [Ronny Østnes / OsloMet](https://www.flickr.com/photos/hioa/12590169215/in/album-72157627082396818/)
+Cover photo: [Ronny Østnes / QuantaEye](https://www.flickr.com/photos/hioa/12590169215/in/album-72157627082396818/)
 
-[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/martinhelso/OsloMet/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/martinhelso/QuantaEye/blob/master/LICENSE)

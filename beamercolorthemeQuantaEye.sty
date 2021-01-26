@@ -1,10 +1,8 @@
-% Theme for OsloMet – Oslo Metropolitan University
+% Theme for QuantaEye
 %
-% Implemented by:
-% Nikolai Bjørnestøl Hansen (nikobjo@oslomet.no)
-% Martin Helsø (martibhe@math.uio.no)
+% Implemented by: LY
 %
-% Version 14-06-2020
+% Version 2021-01-26
 
 
 \mode<presentation>
@@ -15,6 +13,7 @@
 
 %% Primary
 \definecolor{omyellow}{RGB}{255, 220, 0}
+\definecolor{quantablue}{RGB}{0, 167, 235}
 
 %% Secondary
 \definecolor{omred}{RGB}{224, 45, 0}
@@ -44,10 +43,10 @@
 % We want \structure to give blue text,
 % but local structure elements to be yellow
 \setbeamercolor*{structure}{fg = omblue}
-\setbeamercolor*{local structure}{fg = omyellow}
+\setbeamercolor*{local structure}{fg = quantablue}
 
 % Many elements are black text on yellow background
-\setbeamercolor{black on yellow}{fg = omblack, bg = omyellow}
+\setbeamercolor{black on yellow}{fg = omblack, bg = quantablue}
 
 \setbeamercolor*{palette primary}{use=structure, fg=structure.fg}
 \setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!75!omred}

@@ -1,16 +1,14 @@
-% Theme for OsloMet – Oslo Metropolitan University
+% Theme for QuantaEye
 %
-% Implemented by:
-% Nikolai Bjørnestøl Hansen (nikobjo@oslomet.no)
-% Martin Helsø (martibhe@math.uio.no)
+% Implemented by: LY
 %
-% Version 14-06-2020
-
+% Version 2021-01-26
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Widescreen %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/normal.png}}
 
 \mode<presentation>
 %% No navigation symbols
@@ -21,20 +19,27 @@
 %%%%%% Frame title %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% \setbeamertemplate{frametitle}
+%% {
+%%     {
+%%         \strut\insertframetitle\strut
+%%     }
+%%     \vskip-0.1ex
+%% }
+\setbeamercolor{frametitle}{fg=white}
 \setbeamertemplate{frametitle}
-{
-    \vbox
-    {
-        \strut\insertframetitle\strut
-    }
-    \vskip-1.3ex
+                  {
+                    \nointerlineskip
+                      \vbox{}\vskip-2ex%
+                      \strut\insertframetitle\strut
+                      \vskip-0.8ex%
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Head/footline %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setbeamertemplate{headline}{ \vspace*{1.7 mm} }
+%% \setbeamertemplate{headline}{ \vspace*{1.7 mm} }
+\setbeamertemplate{headline}{ \vspace*{5 mm} }
 \setbeamertemplate{footline}
 {
     \hbox to \paperwidth
@@ -72,9 +77,8 @@
     {
         
         \includegraphics[height = 0.1\paperheight, viewport = 0 0 520 400]
-            {OM-images/OM-logo}
+            {images/logo.png}
     }
 }
-\showlogo
 
 \mode<all>
